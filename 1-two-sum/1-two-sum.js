@@ -4,7 +4,6 @@
  * @return {number[]}
  */
 
-// The inner/2nd loop doesn't have to run across the entire array, because we would be repeating combinations. Note that a + b = b + a.
 /*
 var twoSum = function(nums, target) {
     for (let i = 0; i < nums.length; i++) {
