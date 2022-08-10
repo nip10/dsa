@@ -1,2 +1,3 @@
-# dsa
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+# Data Structures & Algorithms
+
+DSA problems and notes, mainly from LeetCode
