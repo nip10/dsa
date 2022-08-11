@@ -1,0 +1,21 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nip10/dsa.git",
+  "author": "Diogo Cardoso <diogo.cardoso@replai.io>",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "c8": "^7.12.0",
+    "vitest": "^0.21.1"
+  }
+}
