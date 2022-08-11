@@ -158,6 +158,13 @@ describe("remove last", () => {
     expect(list.head).toBeUndefined();
   });
 
+  it("should remove last element on list with one node", () => {
+    const node = new ListNode("foo");
+    const list = new LinkedList(node);
+    list.removeLast();
+    expect(list.head?.next).toBeUndefined();
+  });
+
   it("should remove last element on list with multiple nodes", () => {
     const node3 = new ListNode("baz");
     const node2 = new ListNode("bar", node3);
@@ -176,13 +183,15 @@ describe("remove at", () => {
   });
 
   it("should not crash when index is greater than list size", () => {
-    const list = new LinkedList();
+    const node = new ListNode("foo");
+    const list = new LinkedList(node);
     list.removeAt(23);
-    expect(list.head).toBeUndefined();
+    expect(list.head).toBe(node);
   });
 
   it("should remove element on specified index", () => {
-    const node3 = new ListNode("baz");
+    const node4 = new ListNode("baz");
+    const node3 = new ListNode("qqq", node4);
     const node2 = new ListNode("bar", node3);
     const node1 = new ListNode("foo", node2);
     const list = new LinkedList(node1);
