@@ -1,5 +1,4 @@
-import util from "util";
-import { assert, beforeEach, describe, expect, it } from "vitest";
+import { describe, expect, it } from "vitest";
 import { LinkedList, ListNode } from "./linked-list";
 
 describe("init", () => {
