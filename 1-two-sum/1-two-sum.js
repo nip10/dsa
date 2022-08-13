@@ -16,17 +16,28 @@ var twoSum = function(nums, target) {
 };
 */
 
-var twoSum = function(nums, target) {
-    const hashtable = {};
-    for (let i = 0; i < nums.length; i++) {
-        let complement = target - nums[i];
-       
-        if (hashtable.hasOwnProperty(complement)){
-          return [hashtable[complement], i]
-        }
- 
-        hashtable[nums[i]] = i;   
-     };
-};
+// var twoSum = function(nums, target) {
+//     const hashMap = new Map();
+//     for (let i = 0; i < nums.length; i++) {
+//         let complement = target - nums[i];
 
-     
+//         if (hashMap.has(complement)){
+//           return [hashMap.get(complement), i]
+//         }
+
+//         hashMap.set(nums[i], i);
+//      };
+// };
+
+var twoSum = function (nums, target) {
+  const hashtable = {};
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i];
+
+    if (hashtable.hasOwnProperty(complement)) {
+      return [hashtable[complement], i];
+    }
+
+    hashtable[nums[i]] = i;
+  }
+};
