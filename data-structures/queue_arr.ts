@@ -1,3 +1,4 @@
+// FIFO
 export class QueueItem {
   value: string;
   constructor(value: string) {

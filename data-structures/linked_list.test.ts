@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { LinkedList, ListNode } from "./linked-list";
+import { LinkedList, ListNode } from "./linked_list";
 
 describe("init", () => {
   it("shoud create a node", () => {

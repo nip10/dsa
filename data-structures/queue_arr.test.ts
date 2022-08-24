@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { Queue, QueueItem } from "./queue";
+import { Queue, QueueItem } from "./queue_arr";
 
 describe("init", () => {
   it("shoud create a queue", () => {

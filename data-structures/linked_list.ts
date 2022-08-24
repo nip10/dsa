@@ -63,9 +63,10 @@ export class LinkedList {
     return tail;
   }
 
-  removeFirst(): void {
+  removeFirst(): ListNode | undefined {
     if (!this.head) return;
     this.head = this.head.next;
+    return this.head;
   }
 
   removeLast(): void {

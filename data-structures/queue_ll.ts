@@ -1,4 +1,5 @@
-import { LinkedList, ListNode } from "./linked-list";
+// FIFO
+import { LinkedList, ListNode } from "./linked_list";
 
 export class Queue2 {
   data: LinkedList | undefined;

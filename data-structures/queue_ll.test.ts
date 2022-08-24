@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { ListNode } from "./linked-list";
-import { Queue2 } from "./queue2";
+import { ListNode } from "./linked_list";
+import { Queue2 } from "./queue_ll";
 
 describe("init", () => {
   it("shoud create a queue", () => {
